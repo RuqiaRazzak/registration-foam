@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/style.css">
+    <link rel="shortcut icon" href="./images/download.jpeg" type="image/x-icon">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Create an Account</h1>
+        <h2>Login</h2>
+        <form id="registration-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <small id="username-error" class="error-message"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <small id="email-error" class="error-message"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <small id="password-error" class="error-message"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                <small id="confirm-password-error" class="error-message"></small>
+            </div>
+
+            <button type="submit" id="submit-btn">Register</button>
+              
+        <span class="toggle-link" onclick="toggleForms('signup')">Don't have an account? Sign Up</span>
+        </form>
+
+        
+    
+            <form id="signup-form" style="display: none;">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <br>
+                <button type="submit">Sign Up</button>
+                <span class="toggle-link" onclick="toggleForms('login')">Already have an account? Login</span>
+            </form>
+  
+    </div>
+    <script src="./apps.js/apps.js"></script>
+</body>
+</html>
